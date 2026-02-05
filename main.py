@@ -9,7 +9,8 @@ app = FastAPI()
 # ========== ADD CORS MIDDLEWARE ==========
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://givotrades.com"],  # later restrict to your domain
+    allow_origins=["https://givotrades.com",
+    "https://www.givotrades.com"],  # later restrict to your domain
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
